@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@pixi/react':
-        specifier: 8.0.0-dev.fdeaea4
-        version: 8.0.0-dev.fdeaea4(pixi.js@8.2.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 8.0.0-dev.908514a
+        version: 8.0.0-dev.908514a(pixi.js@8.2.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       pixi.js:
         specifier: ^8.2.1
         version: 8.2.1
@@ -238,8 +238,8 @@ packages:
   '@pixi/colord@2.9.6':
     resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==}
 
-  '@pixi/react@8.0.0-dev.fdeaea4':
-    resolution: {integrity: sha512-EA52/lE/DWHz+HkLq45NqZyqAIsMoEE0u77eQAQuo/xwIc/Fa+P49N3F9Ol2+zOEN48F/GkYTPikUgNzgAndSg==}
+  '@pixi/react@8.0.0-dev.908514a':
+    resolution: {integrity: sha512-yHrL8h6Fhn42Vr0gokZrOrFT8NV/udKUL74RMbyQhnC6nc3cPbNAXGj4I4Eq01Jx506qwas7CfBT1KHpcmjlWg==}
     peerDependencies:
       pixi.js: ^8.2.1
       react: '>=18.0.0'
@@ -1138,7 +1138,7 @@ snapshots:
 
   '@pixi/colord@2.9.6': {}
 
-  '@pixi/react@8.0.0-dev.fdeaea4(pixi.js@8.2.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@pixi/react@8.0.0-dev.908514a(pixi.js@8.2.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       pixi.js: 8.2.1
       react: 18.3.1

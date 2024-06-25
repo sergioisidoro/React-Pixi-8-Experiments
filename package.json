@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pixi/react": "8.0.0-dev.fdeaea4",
+    "@pixi/react": "8.0.0-dev.908514a",
     "pixi.js": "^8.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
