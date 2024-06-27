@@ -4,9 +4,14 @@ import "./App.css";
 import { extend, useAsset, useTick } from "@pixi/react";
 import { Container, Graphics, Sprite, Text, Texture } from "pixi.js";
 
+import * as PIXI from 'pixi.js'
+import { Viewport } from 'pixi-viewport'
+import { AppViewport } from "./viewport/viewport";
+
 extend({ Container, Graphics, Text, Sprite });
 
 function App() {
+  
   const drawCallback = useCallback((graphics: Graphics) => {
     graphics.clear();
     graphics.setFillStyle({ color: "red" });
@@ -14,6 +19,11 @@ function App() {
     graphics.fill();
   }, []);
 
+  const texts = [
+    "This is text",
+    "This is pixiText",
+    "This is pixiText",
+  ]
   const bunnySprite = useAsset<Texture>("https://pixijs.com/assets/bunny.png");
 
   const spriteRef = useRef<Sprite>(null);
@@ -24,18 +34,20 @@ function App() {
     if (spriteRef.current) {
       spriteRef.current.rotation += 0.01;
     }
-
-    console.log(ticker);
   });
 
   return (
     <>
+      <AppViewport>
       <container x={100} y={100}>
         <graphics draw={drawCallback} />
 
         <container x={3}>
-          <text text="This is text" />
-          <pixiText text="This is pixiText" y={24} />
+          {texts.map((text, index) => (
+            <container key={index} y={index * 20}>
+              <pixiText text={text} />
+            </container>
+          ))}
         </container>
 
         <container x={200}>
@@ -52,6 +64,7 @@ function App() {
           </Suspense>
         </container>
       </container>
+      </AppViewport>
     </>
   );
 }
