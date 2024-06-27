@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pixi/react": "8.0.0-dev.77b1559",
+    "@pixi/react": "8.0.0-dev.4657710",
+    "pixi-viewport": "^5.0.3",
     "pixi.js": "^8.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -26,6 +27,5 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
-  },
-  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+  }
 }
